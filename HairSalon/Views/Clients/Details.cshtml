@@ -6,8 +6,8 @@
 
 <h1>Client Details</h1>
 <br>
-@* <h3>@Html.DisplayNameFor(model => model.Name): @HtmlDisplayFor(model =>model.Name)</h3>
+<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
 <br>
-<h3>@Html.DisplayNameFor(model => model.Stylist): @HtmlDisplayFor(model =>model.Stylist)</h3>
-<br> *@
+<h3>@Html.DisplayNameFor(model => model.Stylist): @Html.DisplayFor(model => model.Stylist.Name)</h3>
+<br>
 <h3>@Html.ActionLink("Back to Stylist List", "Index", "Stylists")</h3>
