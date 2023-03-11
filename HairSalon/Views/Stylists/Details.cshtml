@@ -13,7 +13,7 @@
 @if (@Model.Clients.Count == 0)
 {
   <h3>No clients have been added to this stylist yet</h3>
-  <h3>"@Html.ActionLink("Add new client", "Create", "Clients")</h3>
+  <h3>@Html.ActionLink("Add new client", "Create", "Clients")</h3>
 }
 else
 {
