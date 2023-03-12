@@ -41,6 +41,10 @@ This application is an independent project created as part of [Epicodus][Epicodu
 }
 ```
 * within the appsettings.json file, you will need to replace `[DATABASE-NAME]` with the name of the database, `[USERNAME]` with your username, and `[PASSWORD]` with your password
+#### Setting Up Database
+* setup a database with tables "clients" and "stylists"
+* "stylists" table should include a column named "StylistId" (int), which must be a primary key, not null and auto-incrementing; it should also include columns named "Name" and "Specialty," both VarChar(255)
+* "clients" table should include a column named "ClientId" (int), which must be a primary key, not null and auto-incrementing; it should also include a column named "Name", which should be VarChar(255) datatype, and a column named StylistID (int)
 #### Launching application
 * navigate to "HairSalon" directory
 * launch with command `$ dotnet run`
